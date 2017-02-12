@@ -11,16 +11,15 @@ module.exports = new class {
 			// esto es una concatenacion ya que javascript no es lo 
 			// suficientemente INTeligente como para ver un
 			// string de varias lineas
-			"CREATE TABLE `usuarios` (" +
+			"CREATE TABLE `persona` (" +
 				"`id` INT NOT NULL AUTO_INCREMENT," +
-				"`nombres` VARCHAR(30) NOT NULL," +
+				"`rif` VARCHAR(30) NOT NULL," +
+				"`nombre` VARCHAR(30) NOT NULL," +
 				"`apellidos` VARCHAR(30) NOT NULL," +
 				"`cedula` INT(8) NOT NULL," +
-				"`usuario` VARCHAR(30) NOT NULL," +
-				"`contrasena` VARCHAR(30) NOT NULL," +
-				"`id_tipo` INT NOT NULL," +
+				"`direccion` VARCHAR(30) NOT NULL," +
+				"`telefono` VARCHAR(30) NOT NULL," +
 				"`email` VARCHAR(50) NOT NULL," +
-				"`foto` VARCHAR(100) NOT NULL," +
 				"PRIMARY KEY (`id`)," +
 				"INDEX (`id_tipo`)" +
 			") ENGINE=InnoDB;", (err) => {
@@ -30,11 +29,14 @@ module.exports = new class {
 				console.log("la tabla usuarios ya existe");
 		});
 	}
-	registrar() {
+	agregar() {
 		console.log("luego se creara");
 	}
-	entrar() {
+	eliminar() {
 		console.log("luego se creara");
+	}
+	editar() {
+		console.log("luego se creara");jh
 	}
 	ver() {
 		console.log("luego se creara");
