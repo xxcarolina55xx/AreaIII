@@ -1,0 +1,17 @@
+commit 6d4dbb3a1fff410086151f8c78f98c82a4336151
+Author: kevin <kevin>
+Date:   Sun Feb 12 21:28:53 2017 -0400
+
+    Base de Datos Funcionando
+
+commit 4b120bc9d29f66af0b353d5a5e044a740898ead7
+Author: kevin <kevin>
+Date:   Sun Feb 12 17:52:19 2017 -0400
+
+    creamos todas las bases de datos para nuestro proyecto
+
+commit 9c48d0eaad5412fda84a3f76be5496961cb34d8d
+Author: kevin <kevin>
+Date:   Sun Feb 12 14:34:23 2017 -0400
+
+    ya aprendimos como usar base de datos node-mysql
