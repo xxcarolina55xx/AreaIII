@@ -11,18 +11,19 @@ module.exports = new class {
 			// esto es una concatenacion ya que javascript no es lo 
 			// suficientemente INTeligente como para ver un
 			// string de varias lineas
-			"CREATE TABLE `persona` (" +
+			"CREATE TABLE `bitacora_proyec` (" +
 				"`id` INT NOT NULL AUTO_INCREMENT," +
 				"`proyecto_id` INT(30) NOT NULL," +
-				"`Personal_id` VARCHAR(30) NOT NULL," +
-				"`created DATATIME" +
+				"`personal_id` INT(30) NOT NULL," +
 				"PRIMARY KEY (`id`)," +
-				"INDEX (`id_personas`)" +
+				"INDEX (`proyecto_id`),"+
+				"INDEX (`personal_id`)"+
 				") ENGINE=InnoDB;", (err) => {
 			if (!err)
-				console.log("creando la tabla usuarios");
+				console.log("creando la tabla bitacora_proyec");
 			else
-				console.log("la tabla usuarios ya existe");
+				console.log("la tabla bitacora_proyec ya existe");
+					
 		});
 	}
 }

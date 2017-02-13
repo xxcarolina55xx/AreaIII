@@ -6,13 +6,13 @@
 var dbs = require("../app/models/dbs.js");
 
 // en orden de letra para facilitar busquedas en el editor
-var comentarios = require("../app/models/comentarios.js");
-var inmuebles = require("../app/models/inmuebles.js");
-var inmuebles_comercio = require("../app/models/inmuebles_comercio.js");
-var inmuebles_propiedad = require("../app/models/inmuebles_propiedad.js");
-var respuestas = require("../app/models/respuestas.js");
-var telefonos = require("../app/models/telefonos.js");
-var tipos = require("../app/models/tipos.js");
-var tipos_adquisicion = require("../app/models/tipos_adquisicion.js");
-var tipos_inmuebles = require("../app/models/tipos_inmuebles.js");
-var usuarios = require("../app/models/usuarios.js");
+
+var avance_proyec = require("../app/models/avance_proyec.js");
+var bitacora_proyect = require("../app/models/bitacora_proyect.js");
+var clientes = require("../app/models/clinetes.js");
+var faces = require("../app/models/faces.js");
+var moneda = require("../app/models/moneda.js");
+var personal = require("../app/models/personal.js");
+var personas = require("../app/models/personas.js");
+var proyecto = require("../app/models/proyecto.js");
+var usuarios = require("../app/models/tipo_proyecto.js");

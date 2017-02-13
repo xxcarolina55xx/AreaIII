@@ -11,28 +11,23 @@ module.exports = new class {
 			// esto es una concatenacion ya que javascript no es lo 
 			// suficientemente INTeligente como para ver un
 			// string de varias lineas
-			"CREATE TABLE `persona` (" +
+			"CREATE TABLE `proyecto` (" +
 				"`id` INT NOT NULL AUTO_INCREMENT," +
-				"`created DATETIME`" +
-				"`cliente_id` int(30) NOT NULL," +
-				"`estatus_id` int(30) NOT NULL," +
-				"`tipo_proyecto` varchar(30) NOT NULL," +
-				"`Nombre_proyecto` varchar(30) NOT NULL," +
-				"`descripccion_proyecto` varchar(180) NOT NULL," +
-				"`created DATETIME`" +
+				"`cliente_id` INT(30) NOT NULL," +
+				"`estatus_id` INT(30) NOT NULL," +
+				"`tipo_proyecto` VARCHAR(30) NOT NULL," +
+				"`Nombre_proyecto` VARCHAR(30) NOT NULL," +
+				"`descripccion_proyecto` VARCHAR(180) NOT NULL," +
 				"`costo` varchar(30) NOT NULL," +
-				"`moneda_id` int(30) NOT NULL," +
-
-				
-				
-				
+				"`moneda_id` INT(30) NOT NULL," +
 				"PRIMARY KEY (`id`)," +
-				"INDEX (`id_personas`)" +
+				"INDEX (`cliente_id`)" +
 				") ENGINE=InnoDB;", (err) => {
 			if (!err)
 				console.log("creando la tabla proyecto");
 			else
 				console.log("la tabla proyecto ya existe");
+			    
 		});
 	}
 	agregar() {

@@ -11,16 +11,17 @@ module.exports = new class {
 			// esto es una concatenacion ya que javascript no es lo 
 			// suficientemente inteligente como para ver un
 			// string de varias lineas
-			"CREATE TABLE `tipos_adquisicion` (" +
+			"CREATE TABLE `tipos_proyecto` (" +
 				"`id` INT NOT NULL AUTO_INCREMENT," +
 				"`tipo` VARCHAR(30) NOT NULL," +
 				"PRIMARY KEY (`id`)" +
 			") ENGINE=InnoDB;", (err) => {
 			if (!err) {
-				console.log("creando la tabla tipos_adquisicion");
-				this.llenar();
+				console.log("creando la tabla tipos_proyecto");
+				
 			}
 			else
-				console.log("la tabla tipos_adquisicion ya existe");
+				console.log("la tabla tipos_proyecto ya existe");
 		});
 	}
+}

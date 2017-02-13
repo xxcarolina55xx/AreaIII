@@ -13,14 +13,14 @@ module.exports = new class {
 			// string de varias lineas
 			"CREATE TABLE `moneda` (" +
 				"`id` INT NOT NULL AUTO_INCREMENT," +
-				"`nombre_mon` varchar(30) NOT NULL," +
-				"`tasa_oficial` varchar(30) NOT NULL," +
+				"`nombre_mon` VARCHAR(30) NOT NULL," +
+				"`tasa_oficial` VARCHAR(30) NOT NULL," +
 				"PRIMARY KEY (`id`)" +
 			") ENGINE=InnoDB;", (err) => {
 			if (!err)
-				console.log("creando la tabla comentarios");
+				console.log("creando la tabla moneda");
 			else
-				console.log("la tabla comentarios ya existe");
+				console.log("la tabla moneda ya existe");
 		});
 	}
 	
